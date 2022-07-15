@@ -18,7 +18,6 @@ for file in folder:
             fb[keys[keycount]] = value
             keycount += 1
     print(fb)
-    response = requests.post("http://<external_ip>/feedback/",
-    json=fb)
+    response = requests.post("http://<external_ip>/feedback/",json=fb)
 print(response.request.body)
 print(response.status_code)
