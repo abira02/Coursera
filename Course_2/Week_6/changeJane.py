@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import subprocess
-input_file = sys.agrv[1]
+input_file = sys.argv[1]
 myfile = open(input_file,"r")
 for file in myfile.readlines():
   old_name = file.strip()
