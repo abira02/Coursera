@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 import sys
 import subprocess
-
-myfile = open("oldFiles.txt","r")
+input_file = sys.agrv[1]
+myfile = open(input_file,"r")
 for file in myfile.readlines():
   old_name = file.strip()
   new_name = old_name.replace('jane','jdoe')
